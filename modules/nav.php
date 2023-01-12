@@ -7,7 +7,7 @@
 			<ul class="nav sidebar-nav">
 					<li class="sidebar-brand">
 							<a href="index.php">
-								<img src="images/logosmall.svg" alt="mAttendance" height="40px" width="200px">
+								<img src="images/mattendance_logo_small.png" alt="mAttendance">
 							</a>
 					</li>
 					<li>
@@ -22,9 +22,6 @@
 					<li>
 							<a href="index.php?page=reports">Reports</a>
 					</li>
-					<li> 
-							<a href="index.php?page=updatestudent">update student details</a>
-					</li>
 					<li>
 							<a href="index.php?page=help">Help</a>
 					</li>
@@ -38,14 +35,17 @@
 			<ul class="nav sidebar-nav">
 					<li class="sidebar-brand">
 							<a href="index.php">
-								<img src="images/logosmall.svg" alt="mAttendance" height="40px" width="200px">
+								<img src="images/mattendance_logo_small.png" alt="mAttendance">
 							</a>
 					</li>
 					<li>
 							<a href="index.php">Login</a>
 					</li>
 					<li>
-							<a href="http://localhost/mattendance/modules/admin.php">Admin login</a>
+							<a href="index.php?page=teacherspage">Teacher's Section</a>
+					</li>
+					<li>
+							<a href="index.php?page=studentspage">Student's Section</a>
 					</li>
 			</ul>
 	</nav>

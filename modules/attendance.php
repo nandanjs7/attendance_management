@@ -16,19 +16,19 @@
 					<label for="select" class="control-label">Subject:</label>
 					<?php
 											
-						$query_subject = "SELECT subject.name, subject.id from subject INNER JOIN user_subject WHERE user_subject.id = subject.id AND user_subject.uid = {$_SESSION['uid']}  ORDER BY subject.name";
+						$query_subject = "SELECT subject.name, subject.id from subject 
+INNER JOIN user_subject WHERE user_subject.id = subject.id AND user_subject.uid = {$_SESSION['uid']}  ORDER BY subject.name";
 						$sub=$conn->query($query_subject);
 						$rsub=$sub->fetchAll(PDO::FETCH_ASSOC);
 						echo "<select name='subject' class='form-control' required='required'>";
 						for($i = 0; $i<count($rsub); $i++)
 						{
-							// if ($_GET['subject'] == $rsub[$i]['id']) 
-							
+							if ($_GET['subject'] == $rsub[$i]['id']) {
 								echo"<option value='". $rsub[$i]['id']."' selected='selected'>".$rsub[$i]['name']."</option>";
-							
-							// else {
-							// 	echo"<option value='". $rsub[$i]['id']."'>".$rsub[$i]['name']."</option>";
-							// }
+							}
+							else {
+								echo"<option value='". $rsub[$i]['id']."'>".$rsub[$i]['name']."</option>";
+							}
 						}
 						echo"</select>";
 					?>									

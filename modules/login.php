@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-6 col-md-offset-3 col-lg-6 text-center">
-      <img src="images/logo.svg" alt="mAttendance" height="350px" width="350px">
+      <img src="images/mattendance_logo_small.png" alt="mAttendance">
       <h3>Teacher's Section</h3>
     </div>
   </div>
